@@ -1,59 +1,58 @@
 # Tusegundazo
+## Instrucciones generales
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+1.	Cree un proyecto nuevo en Angular
+2.	Suba el proyecto a un repositorio en su cuenta personal
 
-## Development server
+MUY IMPORTANTE: Durante el desarrollo de la evaluación no olvide ir salvando los cambios periódicamente en el repositorio de GitHub.  
 
-To start a local development server, run:
+Enunciado de la evaluación
 
-```bash
-ng serve
-```
+## Punto No. 1 (70%)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Se debe desarrollar una aplicación en Angular que permita mostrar vehículos de segunda mano en venta. En particular, la aplicación debe tener:
 
-## Code scaffolding
+•	Un módulo para vehículos (10%)
+•	Una clase Vehiculo con todos los atributos que le permitan manejar los datos de un vehículo (20%)
+•	Un servicio que utiliza http para obtener de esta URL un conjunto de datos de vehículos (20%). 
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+https://gist.githubusercontent.com/josejbocanegra/17bb8c76405e43655d551a90800c8a81/raw/d41b4acc3457e51e7533fad6d5e9925ee9676457/202212_MISW4104_Grupo1.json 
 
-```bash
-ng generate component component-name
-```
+•	Un componente de listar vehículo que presentará en una tabla de Bootstrap los datos del vehículo (marca, línea y modelo) (20%).
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+La vista debe hacerse con el selector del componente y el resultado final debe verse lo más parecido a la Fig. 1.
 
-```bash
-ng generate --help
-```
+  
 
-## Building
+Figura 1. Despliegue del listado de los vehículos
 
-To build the project run:
+ 
+## Punto No. 2 (10%)
 
-```bash
-ng build
-```
+Modifique el componente de listar para incluir dos líneas que muestren el número de vehículos de cada marca proporcionados por el listado. Este número debe ser calculado dado que no se conoce a priori.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+El resultado debe verse lo más parecido a la Fig. 2: 
 
-## Running unit tests
+ 
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-```bash
-ng test
-```
+Figura 2. Modificación del componente para listar vehículos
 
-## Running end-to-end tests
+ 
 
-For end-to-end (e2e) testing, run:
+## Punto No. 3 (20%)
 
-```bash
-ng e2e
-```
+Realice la prueba del componente. Para esto, en la prueba cree un listado de 3 vehículos y verifique que la tabla se crea correctamente con tres filas más el encabezado. 
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Mockup
 
-## Additional Resources
+En el siguiente enlace puede consultar el mockup que le servirá como referencia para diseñar la página:
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+https://www.figma.com/file/xJgTsbJQQbCejp3IwIA9RF/Monitoria-MISW---Mockups-parcial-1A?node-id=0%3A1 
+
+## Instrucciones para la entrega de la evaluación
+
+1. Haga commit y push a su repositorio personal.  
+2. Haga un release con la etiqueta 1.0.0 y el título ParcialMISW4104. 
+3. Suba como respuesta a la actividad de Coursera el archivo .zip del release y la URL de su repositorio. 
+4. Posterior a la entrega de la evaluación NO puede modificar el repositorio. Si se presenta alguna modificación después de la hora de entrega, por mínima que sea, la evaluación será anulada.
